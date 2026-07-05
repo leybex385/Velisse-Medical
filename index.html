@@ -1399,36 +1399,75 @@
     </section>
 
     <!-- PHILANTHROPY -->
+    <style>
+        .phil-grid {
+            display: flex;
+            align-items: center;
+        }
+        .phil-img-wrap {
+            width: 55%;
+            position: relative;
+            z-index: 1;
+        }
+        .phil-text-wrap {
+            width: 50%;
+            margin-left: -5%;
+            position: relative;
+            z-index: 2;
+        }
+        @media (max-width: 992px) {
+            .phil-grid {
+                flex-direction: column;
+            }
+            .phil-img-wrap {
+                width: 100%;
+            }
+            .phil-text-wrap {
+                width: 100%;
+                margin-left: 0;
+                margin-top: -40px;
+            }
+        }
+    </style>
     <section id="philanthropy" style="background: #f8fafc; padding: 120px 0; position: relative; overflow: hidden;">
         <div class="container reveal">
-            <div style="max-width: 900px; margin: 0 auto;">
-                <div style="background: #ffffff; padding: 60px; border-radius: 24px; box-shadow: 0 40px 80px rgba(0,0,0,0.06); border: 1px solid rgba(15, 23, 42, 0.05);">
-                    
-                    <div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 25px;">
-                        <div style="width: 40px; height: 3px; background: #0d9488;"></div>
-                        <h3 style="color: #0d9488; margin: 0; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; font-weight: 800;">Philanthropy</h3>
-                        <div style="width: 40px; height: 3px; background: #0d9488;"></div>
-                    </div>
-
-                    <h2 style="font-size: 44px; color: #0f172a; margin: 0 0 30px 0; font-weight: 800; letter-spacing: -1.5px; line-height: 1.1; text-align: center;">
-                        Healthcare Without Borders <span style="font-family: 'Times New Roman', serif; font-style: italic; color: #0d9488; font-weight: 400;">Initiative</span>
-                    </h2>
-
-                    <p style="font-size: 17px; color: #475569; line-height: 1.9; margin: 0 0 20px 0; text-align: center;">
-                        In 2022, Maya led Velisse Medical's "Healthcare Without Borders Initiative," partnering with nonprofit organizations to donate patient monitoring devices and essential medical equipment to community clinics in Southeast Asia.
-                    </p>
-                    <p style="font-size: 17px; color: #475569; line-height: 1.9; margin: 0 0 40px 0; text-align: center;">
-                        The initiative supplied digital blood pressure monitors, pulse oximeters, and portable oxygen concentrators to underserved healthcare facilities while also supporting clinical staff through equipment training and technical guidance.
-                    </p>
-
-                    <!-- Clinical Metric Box -->
-                    <div style="padding: 25px 30px; background: #ffffff; border-radius: 12px; border: 2px solid rgba(13, 148, 136, 0.2); box-shadow: 0 10px 30px rgba(0,0,0,0.04);">
-                        <p style="margin: 0; font-size: 18px; font-weight: 600; color: #0f172a; line-height: 1.6; text-align: center;">
-                            To date, the program has benefited more than <span style="color: #0d9488; font-size: 24px; font-weight: 800;">2,000 patients</span> by improving access to basic diagnostic technologies.
-                        </p>
-                    </div>
-                    
+            <div class="phil-grid">
+                
+                <!-- Image Side -->
+                <div class="phil-img-wrap">
+                    <img src="photo_2026-07-06_00-29-07.jpg" style="width: 100%; border-radius: 20px; box-shadow: 0 30px 60px rgba(15, 23, 42, 0.15); display: block;" alt="Healthcare Without Borders">
                 </div>
+
+                <!-- Text Side -->
+                <div class="phil-text-wrap">
+                    <div style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px); padding: 60px; border-radius: 24px; box-shadow: 0 40px 80px rgba(0,0,0,0.06); border: 1px solid rgba(255, 255, 255, 0.8);">
+                        
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+                            <div style="width: 40px; height: 3px; background: #0d9488;"></div>
+                            <h3 style="color: #0d9488; margin: 0; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; font-weight: 800;">Philanthropy</h3>
+                        </div>
+
+                        <h2 style="font-size: 44px; color: #0f172a; margin: 0 0 30px 0; font-weight: 800; letter-spacing: -1.5px; line-height: 1.1;">
+                            Healthcare Without Borders <span style="font-family: 'Times New Roman', serif; font-style: italic; color: #0d9488; font-weight: 400;">Initiative</span>
+                        </h2>
+
+                        <p style="font-size: 17px; color: #475569; line-height: 1.9; margin: 0 0 20px 0;">
+                            In 2022, Maya led Velisse Medical's "Healthcare Without Borders Initiative," partnering with nonprofit organizations to donate patient monitoring devices and essential medical equipment to community clinics in Southeast Asia.
+                        </p>
+                        <p style="font-size: 17px; color: #475569; line-height: 1.9; margin: 0 0 40px 0;">
+                            The initiative supplied digital blood pressure monitors, pulse oximeters, and portable oxygen concentrators to underserved healthcare facilities while also supporting clinical staff through equipment training and technical guidance.
+                        </p>
+
+                        <!-- Clinical Metric Box -->
+                        <div style="padding: 25px 30px; background: #ffffff; border-radius: 12px; border-left: 5px solid #0d9488; box-shadow: 0 10px 30px rgba(0,0,0,0.04);">
+                            <p style="margin: 0; font-size: 18px; font-weight: 600; color: #0f172a; line-height: 1.6;">
+                                To date, the program has benefited more than <span style="color: #0d9488; font-size: 24px; font-weight: 800;">2,000 patients</span> by improving access to basic diagnostic technologies.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
